@@ -25,6 +25,7 @@
     poppy: "assets/img/art/poppy.png",
     cherries: "assets/img/art/cherries.png",
     kalyna: "assets/img/art/kalyna.png?v=2",
+    sprig: "assets/img/art/sprig.png",
     // "oval-frame": "assets/img/art/oval-frame.png",
     // vinok: "assets/img/art/vinok.png",
     // rose: "assets/img/art/rose.png",
