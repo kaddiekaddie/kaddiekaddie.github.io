@@ -427,7 +427,7 @@
 /* ---- closing ---- */
 .pl-close { text-align: center; padding: 96px 0 110px; position: relative; }
 .pl-candy { height: 14px; background-size: 60px 60px; }
-.pl-close .pl-seal { width: 180px; height: auto; margin: 0 auto var(--space-6); transform: rotate(var(--spin, 0deg)); }
+.pl-close .pl-seal { width: 180px; height: auto; margin: 0 auto var(--space-6); }
 .pl-close .pl-display { margin-bottom: var(--space-2); }
 .pl-close .script-md { color: var(--brand); margin: 0 0 var(--space-6); font: var(--text-script-md); }
 .pl-close .pl-actions { justify-content: center; }
