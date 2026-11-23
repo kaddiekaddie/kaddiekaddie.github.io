@@ -242,11 +242,20 @@
       });
       return s + "</g>";
     };
+    const plant = (name, x, y, size, transform = "") => {
+      const box = `x="${f1(x - size / 2)}" y="${f1(y - size / 2)}" width="${size}" height="${size}"`;
+      const rotate = transform ? ` transform="${transform}"` : "";
+      const asset = ART[name];
+      return asset
+        ? `<image href="${asset}" ${box}${rotate}/>`
+        : `<use href="#${name}" ${box}${rotate}/>`;
+    };
+
     let s = ribbons(206, -1) + ribbons(334, 1);
     // leaves behind
     for (let d = 200; d <= 340; d += 10) {
       const [x, y] = at(d);
-      s += `<use href="#sprig" x="${f1(x - 34)}" y="${f1(y - 34)}" width="68" height="68" transform="rotate(${d + 90 + ((d / 10) % 2 ? 50 : -50)} ${f1(x)} ${f1(y)})"/>`;
+      s += plant("sprig", x, y, 68, `rotate(${d + 90 + ((d / 10) % 2 ? 50 : -50)} ${f1(x)} ${f1(y)})`);
     }
     const flowers = [
       [207, "kalyna", 66], [218, "chamomile", 70], [230, "rose", 82], [243, "poppy", 80], [256, "chamomile", 70],
@@ -254,7 +263,7 @@
     ];
     flowers.forEach(([d, k, sz]) => {
       const [x, y] = at(d);
-      s += `<use href="#${k}" x="${f1(x - sz / 2)}" y="${f1(y - sz / 2)}" width="${sz}" height="${sz}"/>`;
+      s += plant(k, x, y, sz);
     });
     return s;
   })();
@@ -327,6 +336,16 @@
      2. CROSS-STITCH (vyshyvka) lettering + motifs
      ------------------------------------------------------------------------ */
   const MOTIFS = {
+    "hero-name": [
+      "r.r............r..........................",
+      "..r............r..........................",
+      "r...rrrrrr.....r.....rrr..rr..rrr..rrrrrr.",
+      "r...r..r..r....r....r...r.r..r...r.r..r..r",
+      "r...r..r..r....r....r...r.r..rrrrr.r..r..r",
+      "r...r..r..r....r....r...r.r..r.....r..r..r",
+      "r...r..r..r....r....r...r.r..r.....r..r..r",
+      "r...r..r..r....rrrr..rrr..r...rrr..r..r..r",
+    ],
     heart: [".rr...rr.", "rrrr.rrrr", "rwrrrrrrr", "rrrrrrrrr", ".rrrrrrr.", "..rrrrr..", "...rrr...", "....r...."],
     star: ["r...r...r", ".r..r..r.", "..r.r.r..", "...rrr...", "rrrrprrrr", "...rrr...", "..r.r.r..", ".r..r..r.", "r...r...r"],
   };
