@@ -23,6 +23,7 @@
     rose: "assets/img/art/rose.png",
     chamomile: "assets/img/art/chamomile.png",
     poppy: "assets/img/art/poppy.png",
+    cherries: "assets/img/art/cherries.png",
     // "oval-frame": "assets/img/art/oval-frame.png",
     // vinok: "assets/img/art/vinok.png",
     // rose: "assets/img/art/rose.png",
