@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Porchlight — a little light left on</title>
-  <meta name="description" content="Porchlight: lorem ipsum dolor sit amet. Features, screenshots, setup steps and FAQ.">
-  <meta name="theme-color" content="#b3122e">
+  <title>Porchlight — la lumière est allumée</title>
+  <meta name="description" content="Porchlight is a companion kit: a dashboard where you build a companion, and a Discord bot where they live.">
+  <meta name="theme-color" content="#8a2a24">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pinyon+Script&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/porchlight.css">
 </head>
-<body data-thread>
+<body>
   <a class="skip-link" href="#main">skip to content</a>
 
   <!-- ============ HEADER (same on every page — update aria-current) ============ -->
@@ -32,222 +33,346 @@
   </header>
 
   <main id="main">
-    <!-- ============ POSTER HERO (embroidered flower wreath) ============ -->
-    <section class="poster bg-floral">
-      <div class="wrap">
-        <div class="poster-inner reveal">
-          <p class="poster-kicker">lorem ipsum presents · MMXXVI</p>
-          <div class="poster-frame">
-            <div class="poster-photo">
-              <img src="assets/img/photos/porch-house.jpg" alt="Placeholder photo: a yellow house with a bicycle resting by the porch" width="900" height="1100">
-              <div class="glow"></div>
-            </div>
-            <div class="bloom-layer" data-bloom="7" aria-hidden="true"></div>
-          </div>
-          <h1>Porch<em>light</em></h1>
-          <p class="sub">a little light left on</p>
-          <p class="lede">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porchlight is a lorem ipsum for dolor sit amet — sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="btn-row">
-            <a class="btn" href="#get-started">get started</a>
-            <a class="btn btn-pink" href="https://github.com/"><svg aria-hidden="true"><use href="#t-github"/></svg>view on github</a>
-            <a class="btn btn-green" href="guides.html#video"><svg aria-hidden="true"><use href="#t-youtube"/></svg>tutorials</a>
-          </div>
+  <div class="pl" data-theme="creme">
 
-          <div class="seal deco" data-spin=".06" aria-hidden="true">
-            <svg viewBox="-54 -54 108 108" style="color:var(--cherry)"><use href="#seal"/></svg>
-            <span>free &amp;<strong>open</strong>source</span>
+    <!-- ============ HERO — lockup, display line, harlequin edge ============ -->
+    <section class="pl-hero">
+      <div class="pl-harlequin pl-hero__field" data-speed=".05" aria-hidden="true"></div>
+      <div class="pl-wrap pl-hero__grid">
+        <div>
+          <p class="pl-eyebrow reveal">Bienvenue — welcome</p>
+          <h1 class="pl-sr">Porchlight — la lumière est allumée, the light is on</h1>
+          <img class="pl-lockup-img reveal" src="assets/porchlight/logos/porchlight-lockup.svg" alt="" width="496" height="226">
+          <p class="pl-display reveal">Leave a light on for someone.</p>
+          <p class="pl-hero__lede reveal">Porchlight is a companion kit: a dashboard where you build a companion, and a Discord bot where they live. They have a life of their own, and they text like a person.</p>
+          <div class="pl-actions reveal">
+            <a class="pl-btn pl-btn--primary" href="#commencer">Allumer — get started</a>
+            <a class="pl-btn" href="guides.html">Read the guides</a>
+            <a class="pl-btn pl-btn--quiet" href="https://github.com/kaddiekaddie">View on GitHub</a>
           </div>
-          <svg class="lantern deco" viewBox="0 0 100 150" data-speed=".1" aria-hidden="true"><use href="#lantern"/></svg>
+          <p class="pl-caption reveal">Free and open source · lives in your own Railway project</p>
+        </div>
+
+        <div class="pl-hero__art reveal">
+          <div class="pl-plate">
+            <!-- door.svg from the brand kit, inlined so the porch light's rays can switch on as you scroll -->
+            <svg viewBox="0 0 120 120" role="img" aria-label="An arched front door with the porch light on">
+              <g fill="none" stroke="#8A2A24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M34 104V54c0-24 44-24 44 0v50"/>
+                <path d="M41 104V56c0-17 30-17 30 0v48" stroke-width="1.4"/>
+                <path d="M44 66h24M44 84h24" stroke-width="1.2"/>
+                <circle cx="66" cy="76" r="1.8"/>
+                <path d="M26 104h60M22 111h68"/>
+                <path d="M86 52h8v6"/>
+                <g transform="translate(83.5 56) scale(.33)" stroke-width="5">
+                  <path d="M32 8.5v2.5M21 17.5L32 11l11 6.5z"/>
+                  <path d="M23.5 17.5h17l-3 28h-11z"/>
+                  <path d="M24.5 45.5h15M28 45.5l1.6 5.5h4.8l1.6-5.5"/>
+                  <path class="pl-rays" d="M8 31h-5M56 31h5M14 17l-4-4M50 17l4-4M14 45l-4 4M50 45l4 4"/>
+                </g>
+                <path transform="translate(94 66.5) scale(0.5)" fill="#8A2A24" stroke="none" d="M0 6C-6.5 1.5-5.8-4.8-2.4-5.1-1.2-5.2-.3-4.4 0-3.2.3-4.4 1.2-5.2 2.4-5.1 5.8-4.8 6.5 1.5 0 6z"/>
+              </g>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ WHAT IS IT ============ -->
-    <section class="section">
-      <div class="wrap two-up" style="align-items:center">
+    <!-- ============ TWO PARTS ============ -->
+    <section class="pl-section pl-section--raised">
+      <div class="pl-wrap">
+        <div class="pl-ornament reveal" aria-hidden="true"><span class="pl-ornament__rule"></span><span class="pl-ornament__word">le concept</span><span class="pl-ornament__rule"></span></div>
+        <div class="pl-head">
+          <p class="pl-eyebrow reveal">What it is</p>
+          <h2 class="reveal">A companion kit, in two parts</h2>
+          <p class="pl-muted reveal">Everyone meets their companion the same way, through Porchlight: a little app for people who would like someone to text.</p>
+        </div>
+        <div class="pl-two">
+          <article class="pl-card reveal">
+            <div class="pl-art"><img src="assets/porchlight/illustrations/key.svg" alt="" width="120" height="120"></div>
+            <div>
+              <p class="pl-eyebrow">The dashboard</p>
+              <h3>Where you build a companion</h3>
+              <p>Who they are, how they talk, what they remember. Create one from scratch, import a Porchlight companion, or bring a character card. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </article>
+          <article class="pl-card reveal" style="--d:.1s">
+            <div class="pl-art"><img src="assets/porchlight/illustrations/phone.svg" alt="" width="120" height="120"></div>
+            <div>
+              <p class="pl-eyebrow">The Discord bot</p>
+              <h3>Where they live</h3>
+              <p>They message you in your DMs, keep their own hours and sometimes text first. Setup, modules and help live under one command: <code>/porchlight</code>.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MEET THEM ============ -->
+    <section class="pl-section">
+      <div class="pl-wrap pl-meet">
+        <div class="pl-meet__copy reveal">
+          <p class="pl-eyebrow">Sa vie — their life</p>
+          <h2>They have a life of their own</h2>
+          <p>Your companion is not "an AI". They are someone you met on Porchlight, with a job, friends and bad days.</p>
+          <p class="pl-muted">Their words are shown exactly as written: if they text in lowercase with no emoji, so does every message.</p>
+          <span class="pl-chip pl-chip--blush"><span class="pl-chip__dot"></span>Getting to know you</span>
+          <span class="pl-chip pl-chip--sage">Memories on</span>
+        </div>
+
+        <article class="pl-profile reveal" style="--d:.1s" aria-label="Example companion profile">
+          <div class="pl-profile__photo pl-harlequin">
+            <span class="pl-profile__badge"><img src="assets/porchlight/logos/porchlight-mark.svg" alt="" width="64" height="60"></span>
+          </div>
+          <div class="pl-profile__body">
+            <p class="pl-profile__name">Théo</p>
+            <p class="pl-profile__meta">31 · Lyon · bookseller</p>
+            <div class="pl-profile__stage"><span class="pl-chip pl-chip--blush"><span class="pl-chip__dot"></span>Getting to know you</span></div>
+            <div class="pl-profile__prompt">
+              <p class="pl-profile__q">A perfect Sunday</p>
+              <p class="pl-profile__a">Coffee, the crossword, and nowhere to be.</p>
+            </div>
+            <div class="pl-profile__prompt">
+              <p class="pl-profile__q">Lately I've been</p>
+              <p class="pl-profile__a">reorganising the poetry shelf nobody visits.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="pl-thread reveal" style="--d:.2s" data-pl-thread aria-label="Example conversation">
+          <p class="pl-thread__day">Mardi soir</p>
+          <div class="pl-msg pl-msg--them"><div class="pl-msg__bubble">are you still up</div></div>
+          <div class="pl-msg pl-msg--them"><div class="pl-msg__bubble">found that book you mentioned. second-hand, someone underlined all the sad parts</div></div>
+          <div class="pl-msg pl-msg--me"><div class="pl-msg__bubble">that sounds perfect honestly</div></div>
+          <div class="pl-msg pl-msg--them"><div class="pl-msg__bubble">saving it for sunday. you're coming by the shop right</div><span class="pl-msg__time">21:42</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LES MODULES ============ -->
+    <section class="pl-section pl-section--sunk">
+      <div class="pl-wrap">
+        <div class="pl-head">
+          <p class="pl-eyebrow reveal">Les modules — modules</p>
+          <h2 class="reveal">Pick what they can do</h2>
+          <p class="pl-muted reveal">Turn modules on from the dashboard. Each one says, in a sentence, what your companion will do.</p>
+        </div>
+        <div class="pl-modules">
+          <article class="pl-module">
+            <div class="pl-module__head">
+              <span class="pl-module__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.5A3.8 3.8 0 0 1 12 8a3.8 3.8 0 0 1 7 2.5C19 15.6 12 20 12 20z"/></svg></span>
+              <div class="pl-module__titles"><h3 class="pl-module__title">Relationship stages</h3><span class="pl-chip">Core</span></div>
+              <label class="pl-toggle"><input type="checkbox" role="switch" id="mod-stages" data-auto-on><span class="pl-toggle__track"><span class="pl-toggle__thumb"></span></span><span class="pl-sr">Relationship stages</span></label>
+            </div>
+            <p class="pl-module__desc">You start as strangers and grow closer at your own pace.</p>
+          </article>
+          <article class="pl-module">
+            <div class="pl-module__head">
+              <span class="pl-module__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/></svg></span>
+              <div class="pl-module__titles"><h3 class="pl-module__title">Souvenirs — memories</h3><span class="pl-chip">Core</span></div>
+              <label class="pl-toggle"><input type="checkbox" role="switch" data-auto-on><span class="pl-toggle__track"><span class="pl-toggle__thumb"></span></span><span class="pl-sr">Memories</span></label>
+            </div>
+            <p class="pl-module__desc">They remember what you tell them, and you can read, edit or forget any of it.</p>
+          </article>
+          <article class="pl-module">
+            <div class="pl-module__head">
+              <span class="pl-module__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
+              <div class="pl-module__titles"><h3 class="pl-module__title">They text first</h3><span class="pl-chip">Optional</span></div>
+              <label class="pl-toggle"><input type="checkbox" role="switch" data-auto-on><span class="pl-toggle__track"><span class="pl-toggle__thumb"></span></span><span class="pl-sr">They text first</span></label>
+            </div>
+            <p class="pl-module__desc">They message you first sometimes, at hours that suit their life.</p>
+          </article>
+          <article class="pl-module">
+            <div class="pl-module__head">
+              <span class="pl-module__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4"/></svg></span>
+              <div class="pl-module__titles"><h3 class="pl-module__title">Voice notes</h3><span class="pl-chip">Optional</span></div>
+              <label class="pl-toggle"><input type="checkbox" role="switch"><span class="pl-toggle__track"><span class="pl-toggle__thumb"></span></span><span class="pl-sr">Voice notes</span></label>
+            </div>
+            <p class="pl-module__desc">Now and then they send a short voice note instead of a text.</p>
+          </article>
+          <article class="pl-module">
+            <div class="pl-module__head">
+              <span class="pl-module__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg></span>
+              <div class="pl-module__titles"><h3 class="pl-module__title">Easy editor</h3><span class="pl-chip">Optional</span></div>
+              <label class="pl-toggle"><input type="checkbox" role="switch" data-auto-on><span class="pl-toggle__track"><span class="pl-toggle__thumb"></span></span><span class="pl-sr">Easy editor</span></label>
+            </div>
+            <p class="pl-module__desc">Change who they are in plain language, without writing a prompt.</p>
+          </article>
+          <article class="pl-module" data-needs="mod-stages">
+            <div class="pl-module__head">
+              <span class="pl-module__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h5l-1 6a2.5 2.5 0 0 1-3 0zM18 4h-5l1 6a2.5 2.5 0 0 0 3 0zM8.5 10.5V18M15.5 10.5V18M6 18h5M13 18h5"/></svg></span>
+              <div class="pl-module__titles"><h3 class="pl-module__title">Intimacy</h3><span class="pl-chip">18+</span></div>
+              <label class="pl-toggle"><input type="checkbox" role="switch"><span class="pl-toggle__track"><span class="pl-toggle__thumb"></span></span><span class="pl-sr">Intimacy</span></label>
+            </div>
+            <p class="pl-module__desc">Builds on relationship stages, so closeness follows the pace you set together.</p>
+            <p class="pl-module__needs"><span class="pl-chip pl-chip--danger pl-needs-chip" data-label="Relationship stages">Turn on first: Relationship stages</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HONEST BY DEFAULT ============ -->
+    <section class="pl-section pl-section--raised">
+      <div class="pl-wrap pl-honest">
         <div class="reveal">
-          <p class="eyebrow">what is it?</p>
-          <h2>Lorem ipsum, <em>explained</em></h2>
-          <p class="lede">Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <div class="facts">
-            <span class="tag tag-cherry">v1.0 lorem</span>
-            <span class="tag tag-green">open source</span>
-            <span class="tag">dolor-friendly</span>
-            <span class="tag tag-beige">sit amet ready</span>
-          </div>
+          <div class="pl-art pl-art--creme" style="max-width:180px;margin-bottom:var(--space-5)"><img src="assets/porchlight/illustrations/envelope.svg" alt="" width="120" height="120"></div>
+          <p class="pl-eyebrow">Vos données — your data</p>
+          <h2>Honest by default</h2>
+          <p class="pl-muted">Every step that touches personal data says what is kept, where it goes, and who can see it.</p>
         </div>
-        <div class="ledger reveal" style="--d:.12s">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue.</p>
-          <p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-          <p class="hand" style="font-size:1.5rem;color:var(--cherry);margin:0">— lorem, the maker ✿</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ FEATURES (fabric patches with pinked edges) ============ -->
-    <section class="section bg-linen torn-top">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow reveal">what it does</p>
-          <h2 class="reveal">sewn-in <em>features</em></h2>
-          <p class="reveal">Maecenas sed diam eget risus varius blandit sit amet non magna. Six little lorem ipsums, stitched with care.</p>
-        </div>
-        <div class="features">
-          <article class="patch reveal">
-            <div class="patch-bg" aria-hidden="true"><div class="pinked bg-gingham-pink"></div></div>
-            <svg class="icon" aria-hidden="true"><use href="#t-sparkles"/></svg>
-            <h3>Lorem ipsum</h3>
-            <p>Dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
-          </article>
-          <article class="patch reveal" style="--d:.08s">
-            <div class="patch-bg" aria-hidden="true"><div class="pinked" style="background:var(--chartreuse)"></div></div>
-            <svg class="icon" aria-hidden="true"><use href="#t-heart"/></svg>
-            <h3>Dolor sit amet</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-          </article>
-          <article class="patch reveal" style="--d:.16s">
-            <div class="patch-bg" aria-hidden="true"><div class="pinked bg-dots"></div></div>
-            <svg class="icon" aria-hidden="true"><use href="#t-page"/></svg>
-            <h3>Consectetur</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-          </article>
-          <article class="patch white-text reveal">
-            <div class="patch-bg" aria-hidden="true"><div class="pinked" style="background:var(--cherry)"></div></div>
-            <svg class="icon" aria-hidden="true"><use href="#t-star"/></svg>
-            <h3>Adipiscing elit</h3>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-          </article>
-          <article class="patch reveal" style="--d:.08s">
-            <div class="patch-bg" aria-hidden="true"><div class="pinked bg-gingham-green"></div></div>
-            <svg class="icon" aria-hidden="true"><use href="#t-button"/></svg>
-            <h3>Sed do eiusmod</h3>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-          </article>
-          <article class="patch reveal" style="--d:.16s">
-            <div class="patch-bg" aria-hidden="true"><div class="pinked" style="background:var(--white)"></div></div>
-            <svg class="icon" aria-hidden="true"><use href="#t-spool"/></svg>
-            <h3>Tempor incididunt</h3>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SCREENSHOTS (scrolls sideways as you scroll down) ============ -->
-    <section class="hscroll bg-pink" data-hscroll>
-      <div class="hscroll-sticky">
-        <div class="hscroll-head">
-          <p class="eyebrow">a peek inside</p>
-          <h2>screen<em>shots</em> <span class="script" style="font-size:.7em;color:var(--cherry)">keep scrolling →</span></h2>
-        </div>
-        <div class="hscroll-track">
-          <figure class="screen-card"><div class="polaroid"><span class="tape"></span><div class="browser-bar"><i></i><i></i><i></i><span>porchlight — lorem</span></div><img src="assets/img/photos/g-flatlay.jpg" alt="Placeholder screenshot" loading="lazy" width="800" height="500"><figcaption>the lorem screen</figcaption></div></figure>
-          <figure class="screen-card"><div class="polaroid"><span class="tape green"></span><div class="browser-bar"><i></i><i></i><i></i><span>porchlight — ipsum</span></div><img src="assets/img/photos/porch-door.jpg" alt="Placeholder screenshot" loading="lazy" width="800" height="600"><figcaption>dolor settings</figcaption></div></figure>
-          <figure class="screen-card"><div class="polaroid"><span class="tape check"></span><div class="browser-bar"><i></i><i></i><i></i><span>porchlight — dolor</span></div><img src="assets/img/photos/g-desk.jpg" alt="Placeholder screenshot" loading="lazy" width="800" height="500"><figcaption>sit amet editor</figcaption></div></figure>
-          <figure class="screen-card"><div class="polaroid"><span class="tape red"></span><div class="browser-bar"><i></i><i></i><i></i><span>porchlight — sit</span></div><img src="assets/img/photos/porch-lamps.jpg" alt="Placeholder screenshot" loading="lazy" width="800" height="600"><figcaption>night mode, lorem</figcaption></div></figure>
-          <figure class="screen-card"><div class="polaroid"><span class="tape"></span><div class="browser-bar"><i></i><i></i><i></i><span>porchlight — amet</span></div><img src="assets/img/photos/g-cafe.jpg" alt="Placeholder screenshot" loading="lazy" width="800" height="500"><figcaption>consectetur view</figcaption></div></figure>
-          <figure class="screen-card"><div class="polaroid"><span class="tape green"></span><div class="browser-bar"><i></i><i></i><i></i><span>porchlight — elit</span></div><img src="assets/img/photos/porch-night.jpg" alt="Placeholder screenshot" loading="lazy" width="800" height="600"><figcaption>the porch at night</figcaption></div></figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ GET STARTED ============ -->
-    <section class="section" id="get-started">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow reveal">get started</p>
-          <h2 class="reveal">three <em>little</em> stitches</h2>
-          <p class="reveal">Sed posuere consectetur est at lobortis. Lorem ipsum in three easy steps — or <a href="guides.html">watch the video guide</a>.</p>
-        </div>
-        <div class="steps">
-          <div class="step reveal">
-            <div class="num"><div class="aida pink stitched-border" data-stitch="1" data-rows="28" data-cell="6" data-font='700 "Bodoni Moda", Georgia, serif' aria-hidden="true"></div></div>
-            <div class="index-card">
-              <p class="card-title">download lorem</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.</p>
-              <code class="code"><span class="c"># lorem ipsum</span>
-git clone https://github.com/…</code>
+        <div class="pl-honest__notes">
+          <div class="pl-notice pl-notice--data reveal">
+            <span class="pl-notice__glyph" aria-hidden="true">♥</span>
+            <div>
+              <p class="pl-notice__title">Ce que nous gardons — what we keep</p>
+              <div class="pl-notice__body"><p>Nothing. Your companion lives in your own Railway project, with your own keys. Porchlight never sees your messages.</p></div>
             </div>
           </div>
-          <div class="step reveal" style="--d:.1s">
-            <div class="num"><div class="aida green stitched-border" data-stitch="2" data-rows="28" data-cell="6" data-font='700 "Bodoni Moda", Georgia, serif' aria-hidden="true"></div></div>
-            <div class="index-card">
-              <p class="card-title">dolor sit amet</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              <code class="code"><span class="c"># consectetur</span>
-lorem --install ipsum</code>
+          <div class="pl-notice pl-notice--info reveal" style="--d:.1s">
+            <span class="pl-notice__glyph" aria-hidden="true">i</span>
+            <div>
+              <p class="pl-notice__title">Runs where you choose</p>
+              <div class="pl-notice__body"><p>Host on Railway or on your own computer, with a model key from OpenRouter or NanoGPT.</p></div>
             </div>
           </div>
-          <div class="step reveal" style="--d:.2s">
-            <div class="num"><div class="aida pink stitched-border" data-stitch="3" data-rows="28" data-cell="6" data-font='700 "Bodoni Moda", Georgia, serif' aria-hidden="true"></div></div>
-            <div class="index-card">
-              <p class="card-title">turn the light on</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-              <code class="code"><span class="c"># adipiscing ✿</span>
-lorem start</code>
+          <div class="pl-chips reveal" style="--d:.2s">
+            <span class="pl-chip pl-chip--blue">Railway</span>
+            <span class="pl-chip pl-chip--blue">Local</span>
+            <span class="pl-chip pl-chip--blue">OpenRouter</span>
+            <span class="pl-chip pl-chip--blue">NanoGPT</span>
+            <span class="pl-chip pl-chip--sage">Open source</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMMENCER — GET STARTED ============ -->
+    <section class="pl-section" id="commencer">
+      <div class="pl-wrap">
+        <div class="pl-head pl-head--center">
+          <p class="pl-eyebrow reveal">Commencer — get started</p>
+          <h2 class="reveal">Three steps to the porch</h2>
+          <p class="pl-muted reveal">The guides name every click, so you only need to have used ChatGPT on the web.</p>
+        </div>
+        <div class="pl-steps">
+          <article class="pl-step reveal">
+            <div class="pl-art"><img src="assets/porchlight/illustrations/envelope.svg" alt="" width="120" height="120"></div>
+            <p class="pl-eyebrow">Step one</p>
+            <h3>Create or import a companion</h3>
+            <p>Create a companion, import a Porchlight companion, or import a character card. We read the card and suggest a few changes so they feel like a real person.</p>
+          </article>
+          <article class="pl-step reveal" style="--d:.1s">
+            <div class="pl-art"><img src="assets/porchlight/illustrations/key.svg" alt="" width="120" height="120"></div>
+            <p class="pl-eyebrow">Step two</p>
+            <h3>Give them a key</h3>
+            <p>Make a Discord bot and paste its token, then add your model key. Saved to your Railway volume. Porchlight never sees it.</p>
+          </article>
+          <article class="pl-step reveal" style="--d:.2s">
+            <div class="pl-art"><img src="assets/porchlight/illustrations/lantern.svg" alt="" width="120" height="120"></div>
+            <p class="pl-eyebrow">Step three</p>
+            <h3>Allumer — turn the light on</h3>
+            <p>Switch them on and go about your evening.</p>
+            <p class="pl-quote">C'est fait. Théo will message you first sometime tonight.</p>
+          </article>
+        </div>
+        <div class="pl-actions reveal" style="justify-content:center;margin-top:var(--space-7)">
+          <a class="pl-btn pl-btn--primary" href="guides.html">Read the setup guide</a>
+          <a class="pl-btn" href="guides.html#video">Watch the setup video</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUR DISCORD ============ -->
+    <section class="pl-section pl-section--sunk">
+      <div class="pl-wrap pl-discordgrid">
+        <div class="pl-discord reveal" aria-label="Example Porchlight message in Discord">
+          <div class="pl-discord__avatar"><img src="assets/porchlight/logos/porchlight-mark-creme.svg" alt="" width="64" height="60"></div>
+          <div class="pl-discord__main">
+            <p class="pl-discord__who"><b>Porchlight</b><span class="pl-discord__app">APP</span><span class="pl-discord__time">Today at 21:04</span></p>
+            <div class="pl-discord__embed">
+              <p class="pl-discord__author">Porchlight · setup</p>
+              <p class="pl-discord__title">C'est fait. Théo is home.</p>
+              <p class="pl-discord__desc">Théo will message you first sometime tonight. Change what they can do with /porchlight modules.</p>
+              <div class="pl-discord__fields">
+                <div class="pl-discord__field is-inline"><p class="pl-discord__fname">Stage</p><p class="pl-discord__fval">Getting to know you</p></div>
+                <div class="pl-discord__field is-inline"><p class="pl-discord__fname">Memories</p><p class="pl-discord__fval">On</p></div>
+                <div class="pl-discord__field is-inline"><p class="pl-discord__fname">Runs on</p><p class="pl-discord__fval">Railway</p></div>
+              </div>
+              <p class="pl-discord__footer">la lumière est allumée · /porchlight help</p>
             </div>
           </div>
         </div>
-        <div class="btn-row center mt-lg">
-          <a class="btn" href="guides.html">full setup guide <svg aria-hidden="true"><use href="#t-arrow"/></svg></a>
-          <a class="btn btn-pink" href="guide.html">read the written version</a>
+        <div class="reveal" style="--d:.1s">
+          <p class="pl-eyebrow">Sur Discord — on Discord</p>
+          <h2>One command, and the rest is them</h2>
+          <p class="pl-muted">The app speaks in embeds, for setup, help and status. Your companion only ever sends plain messages, like a person would.</p>
+          <ul class="pl-cmds">
+            <li><code>/porchlight setup</code><span>Set up a companion, step by step.</span></li>
+            <li><code>/porchlight modules</code><span>Turn features on or off.</span></li>
+            <li><code>/porchlight memories</code><span>Read, edit or forget what they remember.</span></li>
+            <li><code>/porchlight data</code><span>See what Porchlight stores and delete it.</span></li>
+            <li><code>/porchlight help</code><span>Guides for Railway, Discord and GitHub.</span></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ============ FAQ ============ -->
-    <section class="section bg-gingham-pink torn-top">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow reveal">questions</p>
-          <h2 class="reveal">frequently <em>asked</em></h2>
+    <!-- ============ AIDE — QUESTIONS ============ -->
+    <section class="pl-section pl-section--raised">
+      <div class="pl-wrap">
+        <div class="pl-head pl-head--center">
+          <p class="pl-eyebrow reveal">Aide — help</p>
+          <h2 class="reveal">Questions, answered</h2>
         </div>
-        <div class="faq">
-          <details class="reveal" open>
+        <div class="pl-faq reveal">
+          <details open>
+            <summary>What do I need to start?</summary>
+            <p>A Discord account, somewhere to run it (Railway or your own computer) and a model key from OpenRouter or NanoGPT. The <a href="guides.html">guides</a> walk through every click.</p>
+          </details>
+          <details>
+            <summary>Who can see our messages?</summary>
+            <p>Only you. Everything is stored in your own Railway project, or on your own machine. Porchlight never sees it.</p>
+          </details>
+          <details>
+            <summary>Can I bring a character I already have?</summary>
+            <p>Yes. Import a character card and we'll point out a few things to adjust so they feel like a real person. You review every change.</p>
+          </details>
+          <details>
             <summary>Lorem ipsum dolor sit amet?</summary>
-            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          </details>
-          <details class="reveal">
-            <summary>Is Porchlight free to use?</summary>
-            <p>Lorem ipsum — quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </details>
-          <details class="reveal">
-            <summary>Duis aute irure dolor in reprehenderit?</summary>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </details>
-          <details class="reveal">
-            <summary>Where can I ask for help?</summary>
-            <p>Sed ut perspiciatis unde omnis iste natus error — try the <a href="guides.html">guides</a> first, or open an issue on GitHub.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- ============ LEAVE THE LIGHT ON ============ -->
-    <section class="lights-on bg-cherry torn-top">
-      <div class="wrap">
-        <svg class="lantern" viewBox="0 0 100 150" aria-hidden="true"><use href="#lantern"/></svg>
-        <h2>leave the <span class="script">light on</span></h2>
-        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-        <div class="btn-row">
-          <a class="btn btn-cream" href="https://github.com/"><svg aria-hidden="true"><use href="#t-github"/></svg>download</a>
-          <a class="btn btn-green" href="guides.html">read the guides</a>
+    <!-- ============ LA LUMIÈRE EST ALLUMÉE ============ -->
+    <div class="pl-candy" style="background-image:url(assets/porchlight/patterns/bordeaux-candy-stripe.svg)" aria-hidden="true"></div>
+    <section class="pl-close">
+      <div class="pl-wrap">
+        <img class="pl-seal reveal" src="assets/porchlight/logos/porchlight-seal.svg" alt="Porchlight seal: la lumière est allumée" width="240" height="240" data-spin=".03">
+        <p class="pl-display reveal">The light is on.</p>
+        <p class="script-md reveal" lang="fr">la lumière est allumée</p>
+        <div class="pl-actions reveal">
+          <a class="pl-btn pl-btn--primary" href="guides.html">Allumer — get started</a>
+          <a class="pl-btn pl-btn--quiet" href="https://github.com/kaddiekaddie">View on GitHub</a>
         </div>
       </div>
     </section>
+
+  </div>
 
   </main>
 
   <!-- ============ FOOTER (same on every page) ============ -->
   <footer class="site-footer bg-leaf torn-top">
     <div class="wrap">
-      <div class="footer-tools" style="color:var(--olive)" aria-hidden="true">
-        <svg><use href="#t-spool"/></svg><svg><use href="#t-scissors"/></svg><svg><use href="#t-needle"/></svg><svg><use href="#t-thimble"/></svg><svg><use href="#t-button"/></svg><svg><use href="#t-pincushion"/></svg><svg><use href="#t-star"/></svg>
+      <div class="footer-icons" aria-hidden="true">
+        <svg><use href="#t-matryoshka"/></svg><svg><use href="#t-poppy"/></svg><svg><use href="#t-samovar"/></svg><svg><use href="#t-star"/></svg><svg><use href="#t-bird"/></svg><svg><use href="#t-cherries"/></svg><svg><use href="#t-wheat"/></svg>
       </div>
       <div class="footer-grid">
         <div>
           <div class="footer-sign">Lorem Ipsum</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis — stitched together by hand.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis — made by hand, with love.</p>
         </div>
         <div>
           <h4>wander</h4>
@@ -262,17 +387,17 @@ lorem start</code>
           <h4>find me</h4>
           <ul>
             <li><a href="https://www.youtube.com/">youtube</a></li>
-            <li><a href="https://github.com/">github</a></li>
+            <li><a href="https://github.com/kaddiekaddie">github</a></li>
             <li><a href="mailto:hello@example.com">email</a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-small">© <span data-year>2026</span> lorem ipsum · hand-stitched with html &amp; css ✿</p>
+      <p class="footer-small">© <span data-year>2026</span> lorem ipsum · made by hand with html &amp; css ✿</p>
     </div>
   </footer>
 
   <button class="to-top" type="button" aria-label="Back to top">
-    <svg viewBox="-50 -50 100 100" style="color:#efa9ba" aria-hidden="true"><use href="#sew-button"/></svg>
+    <svg viewBox="-50 -50 100 100" aria-hidden="true"><use href="#up"/></svg>
   </button>
 
   <script src="assets/js/main.js" defer></script>

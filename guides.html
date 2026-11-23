@@ -9,10 +9,10 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pinyon+Script&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-thread>
+<body data-beads>
   <a class="skip-link" href="#main">skip to content</a>
 
   <!-- ============ HEADER (same on every page — update aria-current) ============ -->
@@ -36,7 +36,7 @@
     <section class="guides-hero">
       <div class="wrap guides-hero-grid">
         <div>
-          <p class="eyebrow reveal">the sewing box</p>
+          <p class="eyebrow reveal">little lessons</p>
           <h1 class="reveal">Guides <em>&amp;</em> <span class="script">tutorials</span></h1>
           <p class="lede reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Video walkthroughs and written how-tos for Porchlight and beyond — sed do eiusmod tempor.</p>
           <div class="btn-row reveal">
@@ -44,20 +44,21 @@
             <a class="btn btn-pink" href="https://www.youtube.com/"><svg aria-hidden="true"><use href="#t-youtube"/></svg>youtube channel</a>
           </div>
         </div>
-        <div class="checker-wrap reveal drop" style="--r:-3deg">
-          <div class="checker-ring" data-speed=".04">
+        <div class="reveal" style="position:relative">
+          <div class="tray-photo" data-speed=".04">
+            <svg viewBox="-160 -160 320 320" aria-hidden="true"><use href="#tray-rim" x="-160" y="-160" width="320" height="320"/></svg>
             <img src="assets/img/photos/g-window.jpg" alt="Placeholder photo: a tidy desk with a laptop by a window" width="800" height="500">
+            <div class="bloom-layer" data-bloom="9" data-bloom-shape="circle" aria-hidden="true"></div>
           </div>
-          <span class="sticker deco" style="left:-6%;bottom:12%;rotate:-8deg" data-speed=".1">lorem for the crafty ✿</span>
-          <svg class="deco tool" style="right:-4%;top:2%" data-speed=".16" data-spin=".05" aria-hidden="true"><use href="#t-scissors"/></svg>
-          <svg class="deco tool" style="right:4%;bottom:-2%;color:var(--olive)" data-speed=".08" aria-hidden="true"><use href="#t-spool"/></svg>
-          <svg class="deco sparkle twinkle" style="left:4%;top:0;color:#d6e66c" viewBox="-52 -52 104 104" data-speed=".22" aria-hidden="true"><use href="#sparkle"/></svg>
+          <span class="sticker deco" style="left:-4%;bottom:8%;rotate:-8deg" data-speed=".1">lorem ipsum ♥</span>
+          <svg class="deco star lg twinkle" style="right:0;top:0;color:#e8c46a" viewBox="-52 -52 104 104" data-speed=".16" aria-hidden="true"><use href="#star8"/></svg>
+          <svg class="deco star twinkle" style="left:6%;top:4%;color:#d3243f" viewBox="-52 -52 104 104" data-speed=".22" aria-hidden="true"><use href="#star8"/></svg>
         </div>
       </div>
     </section>
 
     <!-- ============ FEATURED VIDEO ============ -->
-    <section class="section bg-gingham-green torn-top">
+    <section class="section bg-floral torn-top">
       <div class="wrap">
         <div class="featured-video reveal">
           <!-- Replace YOUR_VIDEO_ID with the id from your YouTube link (the part after watch?v=) -->
@@ -89,14 +90,14 @@
         </div>
 
         <div class="filters" role="group" aria-label="Filter guides">
-          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true"><svg aria-hidden="true"><use href="#t-sparkles"/></svg>all</button>
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true"><svg aria-hidden="true"><use href="#t-star"/></svg>all</button>
           <button class="filter-btn" type="button" data-filter="video" aria-pressed="false"><svg aria-hidden="true"><use href="#t-video"/></svg>videos</button>
           <button class="filter-btn" type="button" data-filter="written" aria-pressed="false"><svg aria-hidden="true"><use href="#t-page"/></svg>written</button>
           <button class="filter-btn" type="button" data-filter="beginner" aria-pressed="false"><svg aria-hidden="true"><use href="#t-heart"/></svg>beginner</button>
           <button class="filter-btn" type="button" data-filter="advanced" aria-pressed="false"><svg aria-hidden="true"><use href="#t-star"/></svg>advanced</button>
           <label class="search">
             <span class="visually-hidden">Search guides</span>
-            <svg aria-hidden="true" style="color:var(--cherry)"><use href="#t-search"/></svg>
+            <svg aria-hidden="true"><use href="#t-search"/></svg>
             <input id="guide-search" type="search" placeholder="search…" autocomplete="off">
           </label>
         </div>
@@ -144,7 +145,7 @@
           </a>
 
           <a class="vcard reveal" data-tags="video advanced" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener">
-            <span class="tape check"></span>
+            <span class="tape folk"></span>
             <div class="thumb">
               <img src="assets/img/photos/g-typewriter.jpg" alt="" loading="lazy" width="800" height="500">
               <svg class="play-btn" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#play"/></svg>
@@ -157,7 +158,7 @@
           </a>
 
           <a class="wcard index-card reveal" style="--d:.08s" data-tags="written advanced" href="guide.html">
-            <svg class="corner" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#daisy"/></svg>
+            <svg class="corner" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#chamomile"/></svg>
             <p class="card-title">adipiscing, advanced</p>
             <div class="meta"><span class="tag">written</span><span class="tag tag-beige">advanced</span></div>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
@@ -178,7 +179,7 @@
           </a>
 
           <a class="wcard index-card reveal" data-tags="written beginner" href="guide.html">
-            <svg class="corner" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#bud"/></svg>
+            <svg class="corner" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#kalyna"/></svg>
             <p class="card-title">lorem troubleshooting</p>
             <div class="meta"><span class="tag">written</span><span class="tag tag-green">beginner</span></div>
             <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
@@ -207,17 +208,17 @@
           </a>
         </div>
 
-        <p class="empty-note" hidden>nothing stitched here yet — try another filter ✿</p>
+        <p class="empty-note" hidden>nothing here yet — try another filter ✿</p>
       </div>
     </section>
 
     <!-- ============ REQUEST A TUTORIAL ============ -->
-    <section class="section bg-dots torn-top">
+    <section class="section bg-lace torn-top">
       <div class="wrap">
         <div class="index-card request-card reveal">
-          <span class="tape check"></span>
+          <span class="tape folk"></span>
           <p class="card-title">can't find what you need?</p>
-          <p>Lorem ipsum dolor sit amet — tell me what you'd like a tutorial on, and I'll add it to the sewing box.</p>
+          <p>Lorem ipsum dolor sit amet — tell me what you'd like a tutorial on, and I'll add it to the library.</p>
           <div class="btn-row center" style="margin-top:18px">
             <a class="btn" href="mailto:hello@example.com"><svg aria-hidden="true"><use href="#t-mail"/></svg>request a guide</a>
             <a class="btn btn-green" href="https://github.com/"><svg aria-hidden="true"><use href="#t-github"/></svg>open an issue</a>
@@ -231,13 +232,13 @@
   <!-- ============ FOOTER (same on every page) ============ -->
   <footer class="site-footer bg-leaf torn-top">
     <div class="wrap">
-      <div class="footer-tools" style="color:var(--olive)" aria-hidden="true">
-        <svg><use href="#t-spool"/></svg><svg><use href="#t-scissors"/></svg><svg><use href="#t-needle"/></svg><svg><use href="#t-thimble"/></svg><svg><use href="#t-button"/></svg><svg><use href="#t-pincushion"/></svg><svg><use href="#t-star"/></svg>
+      <div class="footer-icons" aria-hidden="true">
+        <svg><use href="#t-matryoshka"/></svg><svg><use href="#t-poppy"/></svg><svg><use href="#t-samovar"/></svg><svg><use href="#t-star"/></svg><svg><use href="#t-bird"/></svg><svg><use href="#t-cherries"/></svg><svg><use href="#t-wheat"/></svg>
       </div>
       <div class="footer-grid">
         <div>
           <div class="footer-sign">Lorem Ipsum</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis — stitched together by hand.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis — made by hand, with love.</p>
         </div>
         <div>
           <h4>wander</h4>
@@ -252,17 +253,17 @@
           <h4>find me</h4>
           <ul>
             <li><a href="https://www.youtube.com/">youtube</a></li>
-            <li><a href="https://github.com/">github</a></li>
+            <li><a href="https://github.com/kaddiekaddie">github</a></li>
             <li><a href="mailto:hello@example.com">email</a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-small">© <span data-year>2026</span> lorem ipsum · hand-stitched with html &amp; css ✿</p>
+      <p class="footer-small">© <span data-year>2026</span> lorem ipsum · made by hand with html &amp; css ✿</p>
     </div>
   </footer>
 
   <button class="to-top" type="button" aria-label="Back to top">
-    <svg viewBox="-50 -50 100 100" style="color:#efa9ba" aria-hidden="true"><use href="#sew-button"/></svg>
+    <svg viewBox="-50 -50 100 100" aria-hidden="true"><use href="#up"/></svg>
   </button>
 
   <script src="assets/js/main.js" defer></script>

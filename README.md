@@ -1,67 +1,78 @@
-# lorem ipsum — a hand-stitched personal site
+# lorem ipsum — a slavic-feminine scrapbook site
 
-A little scrapbook-style personal website: embroidery, cross-stitch, polaroids, gingham and ribbons in
-**chartreuse, cherry red, beige and pink**. It's plain HTML + CSS + a single JS file — no build step, no
-frameworks — so it runs on GitHub Pages as-is.
+A personal website in **chartreuse, cherry red, beige and pink**, drawing on Slavic folk art:
+Zhostovo and Petrykivka painted florals, a *vinok* flower crown with ribbons, Pavlovo Posad shawl
+print, Vologda lace, *rushnyk* cross-stitch bands, coral beads and folk eight-point stars, all on
+scrapbook paper with polaroids and washi tape. Plain HTML + CSS + one JS file, with no build step, so
+it runs on GitHub Pages as-is.
 
 ## Pages
 
 | file | what it is |
 | --- | --- |
-| `index.html` | Home — "hello," + cross-stitched name, gilded oval portrait, crossing ribbon marquees, "what you'll find here", Porchlight teaser, latest guides, a little letter |
-| `about.html` | About me — scrapbook board with ID card, embroidery hoop, "little things" polaroids, currently-list, timeline, say-hello envelope |
-| `porchlight.html` | Porchlight — embroidered flower-wreath poster, what-is-it, fabric-patch features, sideways-scrolling screenshots, 3 setup steps, FAQ |
-| `guides.html` | Guides & tutorials — featured video, filterable/searchable library of video + written guides |
-| `guide.html` | Template for a **written** tutorial (table of contents, tips, code blocks, figures) |
+| `index.html` | Home: "hello," and a cross-stitched name, a gilded portrait crowned with a vinok, crossing ribbons, the shawl-print "what you'll find here", a Porchlight teaser, the latest guides, a little letter |
+| `about.html` | About me: scrapbook board and ID card, a painted lacquer tray, "little things" polaroids, a currently list, a timeline, a say-hello envelope |
+| `porchlight.html` | **Porchlight**, built from the Porchlight brand book (see below) |
+| `guides.html` | Guides and tutorials: featured video, filterable and searchable library of video and written guides |
+| `guide.html` | Template for a **written** tutorial |
+| `IMAGE-LIST.md` | Every drawing made in code, with sizes, so you can recreate them as PNGs |
 
 ## Things that move when you scroll
 
-- **Parallax** — anything with `data-speed=".05"` drifts at its own pace (negative = the other way).
-- **Spin** — anything with `data-spin=".04"` rotates as you scroll (the seals, flowers, embroidery hoop).
-- **Ribbon marquees** — follow the direction you scroll, then keep drifting that way.
-- **Running stitch** — a red thread sews itself down the left margin on wide screens; the needle flips when you scroll up.
-- **Header** tucks away when scrolling down and comes back when scrolling up.
-- **Polaroids** sway with scroll speed; scrapbook pieces "drop" into place as they appear.
-- **Porch light** gets brighter the further you scroll; the Porchlight screenshots slide sideways.
-- Everything calms down automatically for visitors with *reduce motion* turned on.
+- **Parallax**: anything with `data-speed=".05"` drifts at its own pace.
+- **Spin**: anything with `data-spin=".04"` turns as you scroll (the seal, the tray, wreath flowers).
+- **Vinok ribbons and polaroids** sway with how fast you scroll.
+- **Ribbon marquees** follow the direction you scroll, then keep drifting that way.
+- **Coral bead strand**: a string of red beads threads itself down the left margin on wide screens, with a little gold coin at the end.
+- The **header** tucks away when you scroll down and comes back when you scroll up.
+- On Porchlight, the **porch light's rays** switch on, the **conversation types itself out** and the **module toggles** flip on as you reach them.
+- Everything calms down for visitors with *reduce motion* turned on.
+
+## The Porchlight page
+
+`porchlight.html` follows the Porchlight brand book:
+
+- **Brand assets** are copied into `assets/porchlight/`: logos, illustrations, patterns and fonts (Cormorant Garamond, Jost, Pinyon Script).
+- **Styles** are in `assets/css/porchlight.css`. The brand tokens and component styles come straight from the kit, scoped to `.pl` so they don't affect the rest of the site.
+- **Rules followed:** crème paper, chocolat ink, bordeaux for the one main action, harlequin only on the hero edge and never behind text, one script flourish per view, French as seasoning with the English beside it, and no exclamation marks.
+- **Components** are rebuilt as plain HTML: ProfileCard, Thread, MessageBubble, ModuleCard, Toggle, Chip, Notice, Ornament, Button, DiscordEmbed.
 
 ## Editing
 
-All text is lorem ipsum — search for `Lorem` / `lorem` and replace.
+All filler text is lorem ipsum. Search for `Lorem` / `lorem` and replace.
 
-- **Your name in cross-stitch:** in `index.html`, change `data-stitch="i'm Lorem"`. It's drawn as real
-  X-stitches from whatever text you put there (`data-rows` = letter height in stitches, `data-cell` = stitch size).
-- **Header + footer** are repeated in each page (so the site works without a build step) — if you change a
-  link, change it in all five files.
-- **Photos** live in `assets/img/photos/`. Drop in your own and keep the same file names, or update the `src`.
-  The placeholders are free Unsplash photos (via Lorem Picsum) under the Unsplash License.
-- **Colours & fonts** are CSS variables at the top of `assets/css/style.css` (`--cherry`, `--chartreuse`, `--pink`, …).
-- **Embroidered artwork** (daisy, rose, bud, sprig, cherries, bow, lantern, gilded frame, sewing tools) is drawn
-  in `assets/js/main.js` and used anywhere with `<svg viewBox="-50 -50 100 100"><use href="#daisy"/></svg>`.
+- **Your name in cross-stitch:** in `index.html`, change `data-stitch="i'm Lorem"`.
+- **Header and footer** are repeated in each page. If you change a link, change it in all five files.
+- **Photos** live in `assets/img/photos/`. They're free Unsplash photos (via Lorem Picsum) under the Unsplash License; drop in your own with the same names.
+- **Colours and fonts** are CSS variables at the top of `assets/css/style.css`.
+
+### Replacing a drawing with your own PNG
+
+Every flower, frame and ornament is drawn in code. To use your own transparent PNG instead, save it in
+`assets/img/art/` and add a line to the `ART` list at the top of `assets/js/main.js`:
+
+```js
+const ART = {
+  rose: "assets/img/art/rose.png",
+};
+```
+
+`IMAGE-LIST.md` lists every name, where it appears, and the minimum and recommended sizes.
+Pattern tiles are swapped in `assets/css/style.css` (the `--pat-…` lines).
 
 ### Adding a video tutorial
 
-In `guides.html`, copy one `<a class="vcard" …>` block and change:
-
-- `href` → your YouTube link
-- the thumbnail `<img>`, duration, title, description
-- `data-tags` → any of `video beginner advanced`
-
-For the **featured video** player, set `data-yt="YOUR_VIDEO_ID"` to the id from your link
-(`youtube.com/watch?v=`**`dQw4w9WgXcQ`**). It only loads YouTube when someone clicks play.
+In `guides.html`, copy an `<a class="vcard" …>` block and change the `href` (your YouTube link), the
+thumbnail, the duration, the title and the text. `data-tags` can be any of `video beginner advanced`.
+For the featured player, set `data-yt` to your video id (the part after `watch?v=`).
 
 ### Adding a written tutorial
 
-1. Duplicate `guide.html` (e.g. `guide-installing.html`) and write your guide in it.
-2. In `guides.html`, copy a `<a class="wcard" …>` block and point its `href` at the new file, with `data-tags="written beginner"` (or `advanced`).
+Duplicate `guide.html`, write your guide, then copy a `<a class="wcard" …>` block in `guides.html` and point it at the new file.
 
 Filters can be linked directly: `guides.html#video`, `guides.html#written`, `guides.html#beginner`.
 
-## Publishing on GitHub Pages
+## Publishing
 
-1. Create a repo — name it **`yourusername.github.io`** for `https://yourusername.github.io`, or any name for `https://yourusername.github.io/reponame`.
-2. Upload / push everything in this folder (keep `.nojekyll`).
-3. Repo **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`** → Save.
-4. Give it a minute, then visit your URL.
-
-To preview locally, just open `index.html` in your browser (or run `python3 -m http.server` in this folder and go to `http://localhost:8000`).
+This repo is `kaddiekaddie.github.io`, so in **Settings → Pages** choose *Deploy from a branch*, then
+`main` / `(root)`. The site lives at https://kaddiekaddie.github.io.

@@ -9,10 +9,10 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pinyon+Script&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-thread>
+<body data-beads>
   <a class="skip-link" href="#main">skip to content</a>
 
   <!-- ============ HEADER (same on every page — update aria-current) ============ -->
@@ -36,7 +36,7 @@
     <section class="about-hero">
       <div class="wrap">
         <div class="board reveal">
-          <span class="tape check corner-l"></span>
+          <span class="tape folk corner-l"></span>
 
           <figure class="polaroid me" data-speed=".03">
             <svg class="paperclip" viewBox="0 0 30 80" style="left:26px" aria-hidden="true"><use href="#paperclip"/></svg>
@@ -45,7 +45,7 @@
           </figure>
 
           <div class="id-card">
-            <span class="tape" style="--tr:3deg"></span>
+            <svg class="bow" viewBox="0 0 200 160" aria-hidden="true"><use href="#bow"/></svg>
             <p class="kicker">welcome to the world of</p>
             <h1>Lorem Ipsum</h1>
             <dl>
@@ -61,15 +61,15 @@
 
           <div class="side">
             <div class="stamp" aria-hidden="true"><img src="assets/img/photos/p-teacup.jpg" alt="" width="600" height="600"></div>
-            <div class="swatch bg-gingham-green" aria-hidden="true"></div>
-            <div class="aida green" data-motif="cherry" data-cell="7" style="justify-self:center;rotate:4deg" aria-hidden="true"></div>
+            <div class="swatch bg-shawl fringe" aria-hidden="true"></div>
+            <div class="aida compact" data-motif="star" data-cell="7" style="justify-self:center;rotate:4deg" aria-hidden="true"></div>
           </div>
 
-          <svg class="deco sparkle lg twinkle" style="left:-18px;top:-20px;color:#f4f2ee" viewBox="-52 -52 104 104" data-speed=".12" aria-hidden="true"><use href="#sparkle"/></svg>
-          <svg class="deco sparkle twinkle" style="right:30%;top:18px;color:#d6e66c" viewBox="-52 -52 104 104" data-speed=".2" aria-hidden="true"><use href="#sparkle"/></svg>
-          <svg class="deco sparkle sm twinkle" style="right:-10px;bottom:30%;color:#f4f2ee" viewBox="-52 -52 104 104" data-speed=".08" aria-hidden="true"><use href="#sparkle"/></svg>
+          <svg class="deco star lg twinkle" style="left:-18px;top:-20px;color:#e8c46a" viewBox="-52 -52 104 104" data-speed=".12" aria-hidden="true"><use href="#star8"/></svg>
+          <svg class="deco star twinkle" style="right:30%;top:18px;color:#d6e66c" viewBox="-52 -52 104 104" data-speed=".2" aria-hidden="true"><use href="#star8"/></svg>
+          <svg class="deco star sm twinkle" style="right:-10px;bottom:30%;color:#e8c46a" viewBox="-52 -52 104 104" data-speed=".08" aria-hidden="true"><use href="#star8"/></svg>
           <svg class="deco" style="left:30%;bottom:-36px;width:90px;height:90px" viewBox="-50 -50 100 100" data-speed="-.05" data-spin=".04" aria-hidden="true"><use href="#rose"/></svg>
-          <svg class="deco" style="left:calc(30% + 64px);bottom:-30px;width:64px;height:64px" viewBox="-50 -50 100 100" data-speed="-.08" data-spin="-.05" aria-hidden="true"><use href="#daisy"/></svg>
+          <svg class="deco" style="left:calc(30% + 64px);bottom:-30px;width:64px;height:64px" viewBox="-50 -50 100 100" data-speed="-.08" data-spin="-.05" aria-hidden="true"><use href="#chamomile"/></svg>
         </div>
       </div>
       <div class="bigname" data-speed="-.06" aria-hidden="true">Lorem Ipsum</div>
@@ -87,23 +87,25 @@
           <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         </div>
 
-        <div class="hoop reveal" style="--d:.15s" aria-hidden="true">
-          <svg class="hoop-screw" viewBox="0 0 50 46"><rect x="12" y="16" width="26" height="22" rx="4" fill="url(#g-silver)" stroke="#8e8a82"/><circle cx="25" cy="10" r="9" fill="url(#g-silver)" stroke="#8e8a82"/></svg>
-          <div class="hoop-ring"></div>
-          <div class="hoop-fabric" data-spin=".035">
-            <svg viewBox="0 0 300 300">
-              <defs><path id="hoop-circle" d="M150 150 m -108 0 a 108 108 0 1 1 216 0 a 108 108 0 1 1 -216 0"/></defs>
-              <text font-family="Special Elite, monospace" font-size="16" letter-spacing="3" fill="#b3122e" filter="url(#thread)">
-                <textPath href="#hoop-circle">lorem ipsum ✿ dolor sit amet ✿ consectetur ✿ adipiscing elit ✿ sed do ✿</textPath>
+        <div class="tray reveal" style="--d:.15s" aria-hidden="true">
+          <svg viewBox="-160 -160 320 320">
+            <use href="#tray-rim" x="-160" y="-160" width="320" height="320"/>
+            <g class="tray-paint" data-spin=".035">
+              <defs><path id="tray-circle" d="M0 0 m -104 0 a 104 104 0 1 1 208 0 a 104 104 0 1 1 -208 0"/></defs>
+              <text font-family="Old Standard TT, serif" font-style="italic" font-size="15" letter-spacing="3" fill="#e8c46a">
+                <textPath href="#tray-circle">lorem ipsum ✦ dolor sit amet ✦ consectetur ✦ adipiscing elit ✦ sed do ✦</textPath>
               </text>
-              <use href="#sprig" x="96" y="132" width="70" height="70" transform="rotate(-35 131 167)"/>
-              <use href="#sprig" x="138" y="132" width="70" height="70" transform="rotate(35 173 167)"/>
-              <use href="#rose" x="105" y="92" width="90" height="90"/>
-              <use href="#daisy" x="80" y="150" width="58" height="58"/>
-              <use href="#bud" x="158" y="146" width="66" height="66"/>
-              <use href="#cherries" x="124" y="180" width="52" height="52"/>
-            </svg>
-          </div>
+              <use href="#sprig" x="-78" y="-30" width="76" height="76" transform="rotate(-50 -40 8)"/>
+              <use href="#sprig" x="2" y="-30" width="76" height="76" transform="rotate(50 40 8)"/>
+              <use href="#sprig" x="-38" y="12" width="76" height="76" transform="rotate(180 0 50)"/>
+              <use href="#poppy" x="-86" y="-14" width="58" height="58"/>
+              <use href="#chamomile" x="26" y="-56" width="54" height="54"/>
+              <use href="#rose" x="-50" y="-60" width="100" height="100"/>
+              <use href="#chamomile" x="-64" y="22" width="44" height="44"/>
+              <use href="#rose" x="18" y="8" width="62" height="62"/>
+              <use href="#kalyna" x="-14" y="34" width="46" height="46"/>
+            </g>
+          </svg>
         </div>
       </div>
     </section>
@@ -118,11 +120,11 @@
         <div class="loves-scatter">
           <figure class="polaroid reveal drop" data-speed=".03"><span class="tape"></span><img src="assets/img/photos/p-raspberries.jpg" alt="Placeholder photo: a cup of raspberries" loading="lazy" width="600" height="600"><figcaption>lorem berries</figcaption></figure>
           <figure class="polaroid reveal drop" style="--d:.08s" data-speed="-.04"><span class="tape green"></span><img src="assets/img/photos/p-pinkflowers.jpg" alt="Placeholder photo: pink blossoms against a blue sky" loading="lazy" width="600" height="600"><figcaption>ipsum in bloom</figcaption></figure>
-          <figure class="polaroid reveal drop" style="--d:.16s" data-speed=".05"><span class="tape check"></span><img src="assets/img/photos/p-mittens.jpg" alt="Placeholder photo: hands in knit mittens holding a mug" loading="lazy" width="600" height="600"><figcaption>dolor &amp; tea</figcaption></figure>
+          <figure class="polaroid reveal drop" style="--d:.16s" data-speed=".05"><span class="tape folk"></span><img src="assets/img/photos/p-mittens.jpg" alt="Placeholder photo: hands in knit mittens holding a mug" loading="lazy" width="600" height="600"><figcaption>dolor &amp; tea</figcaption></figure>
           <figure class="polaroid reveal drop" style="--d:.24s" data-speed="-.02"><span class="tape red"></span><img src="assets/img/photos/p-reddoor.jpg" alt="Placeholder photo: a red brick wall with a door and a bicycle" loading="lazy" width="600" height="600"><figcaption>sit amet</figcaption></figure>
           <figure class="polaroid reveal drop" data-speed="-.03"><span class="tape green"></span><img src="assets/img/photos/p-teapot.jpg" alt="Placeholder photo: a glass teapot beside yellow flowers" loading="lazy" width="600" height="600"><figcaption>consectetur</figcaption></figure>
           <figure class="polaroid reveal drop" style="--d:.08s" data-speed=".05"><span class="tape"></span><img src="assets/img/photos/p-dog.jpg" alt="Placeholder photo: a black puppy on wooden floorboards" loading="lazy" width="600" height="600"><figcaption>adipiscing pup</figcaption></figure>
-          <figure class="polaroid reveal drop" style="--d:.16s" data-speed="-.04"><span class="tape check"></span><img src="assets/img/photos/p-tulips.jpg" alt="Placeholder photo: orange tulips" loading="lazy" width="600" height="600"><figcaption>sed do tulips</figcaption></figure>
+          <figure class="polaroid reveal drop" style="--d:.16s" data-speed="-.04"><span class="tape folk"></span><img src="assets/img/photos/p-tulips.jpg" alt="Placeholder photo: orange tulips" loading="lazy" width="600" height="600"><figcaption>sed do tulips</figcaption></figure>
           <figure class="polaroid reveal drop" style="--d:.24s" data-speed=".03"><span class="tape red"></span><img src="assets/img/photos/p-strawberries.jpg" alt="Placeholder photo: a bowl of yoghurt with strawberries" loading="lazy" width="600" height="600"><figcaption>eiusmod mornings</figcaption></figure>
         </div>
       </div>
@@ -150,25 +152,25 @@
           <h2>a little <em>timeline</em></h2>
           <div class="timeline">
             <div class="tl-item">
-              <svg class="button-node" viewBox="-50 -50 100 100" style="color:#efa9ba" aria-hidden="true"><use href="#sew-button"/></svg>
+              <svg class="node" viewBox="-50 -50 100 100" style="color:#de7b96" aria-hidden="true"><use href="#rosette"/></svg>
               <p class="when">MMXXIII</p>
               <h3>Lorem ipsum begins</h3>
               <p>Donec id elit non mi porta gravida at eget metus.</p>
             </div>
             <div class="tl-item">
-              <svg class="button-node" viewBox="-50 -50 100 100" style="color:#d6e66c" aria-hidden="true"><use href="#sew-button"/></svg>
+              <svg class="node" viewBox="-50 -50 100 100" style="color:#93aa2a" aria-hidden="true"><use href="#rosette"/></svg>
               <p class="when">MMXXIV</p>
               <h3>Dolor sit amet</h3>
               <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</p>
             </div>
             <div class="tl-item">
-              <svg class="button-node" viewBox="-50 -50 100 100" style="color:#e0475f" aria-hidden="true"><use href="#sew-button"/></svg>
+              <svg class="node" viewBox="-50 -50 100 100" style="color:#b3122e" aria-hidden="true"><use href="#rosette"/></svg>
               <p class="when">MMXXV</p>
               <h3>Porchlight is born</h3>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
             </div>
             <div class="tl-item">
-              <svg class="button-node" viewBox="-50 -50 100 100" style="color:#efe2c9" aria-hidden="true"><use href="#sew-button"/></svg>
+              <svg class="node" viewBox="-50 -50 100 100" style="color:#e8c46a" aria-hidden="true"><use href="#rosette"/></svg>
               <p class="when">MMXXVI</p>
               <h3>Guides &amp; tutorials</h3>
               <p>Maecenas faucibus mollis interdum, sed posuere consectetur.</p>
@@ -179,7 +181,7 @@
     </section>
 
     <!-- ============ SAY HELLO (envelope) ============ -->
-    <section class="section bg-dots torn-top">
+    <section class="section bg-lace torn-top">
       <div class="wrap">
         <div class="envelope contact-env reveal">
           <div class="wax" aria-hidden="true">L</div>
@@ -200,13 +202,13 @@
   <!-- ============ FOOTER (same on every page) ============ -->
   <footer class="site-footer bg-leaf torn-top">
     <div class="wrap">
-      <div class="footer-tools" style="color:var(--olive)" aria-hidden="true">
-        <svg><use href="#t-spool"/></svg><svg><use href="#t-scissors"/></svg><svg><use href="#t-needle"/></svg><svg><use href="#t-thimble"/></svg><svg><use href="#t-button"/></svg><svg><use href="#t-pincushion"/></svg><svg><use href="#t-star"/></svg>
+      <div class="footer-icons" aria-hidden="true">
+        <svg><use href="#t-matryoshka"/></svg><svg><use href="#t-poppy"/></svg><svg><use href="#t-samovar"/></svg><svg><use href="#t-star"/></svg><svg><use href="#t-bird"/></svg><svg><use href="#t-cherries"/></svg><svg><use href="#t-wheat"/></svg>
       </div>
       <div class="footer-grid">
         <div>
           <div class="footer-sign">Lorem Ipsum</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis — stitched together by hand.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis — made by hand, with love.</p>
         </div>
         <div>
           <h4>wander</h4>
@@ -221,17 +223,17 @@
           <h4>find me</h4>
           <ul>
             <li><a href="https://www.youtube.com/">youtube</a></li>
-            <li><a href="https://github.com/">github</a></li>
+            <li><a href="https://github.com/kaddiekaddie">github</a></li>
             <li><a href="mailto:hello@example.com">email</a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-small">© <span data-year>2026</span> lorem ipsum · hand-stitched with html &amp; css ✿</p>
+      <p class="footer-small">© <span data-year>2026</span> lorem ipsum · made by hand with html &amp; css ✿</p>
     </div>
   </footer>
 
   <button class="to-top" type="button" aria-label="Back to top">
-    <svg viewBox="-50 -50 100 100" style="color:#efa9ba" aria-hidden="true"><use href="#sew-button"/></svg>
+    <svg viewBox="-50 -50 100 100" aria-hidden="true"><use href="#up"/></svg>
   </button>
 
   <script src="assets/js/main.js" defer></script>
