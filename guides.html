@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guides &amp; tutorials — Lorem Ipsum</title>
+  <meta name="description" content="Video and written tutorials for Porchlight: lorem ipsum dolor sit amet.">
+  <meta name="theme-color" content="#b3122e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pinyon+Script&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-thread>
+  <a class="skip-link" href="#main">skip to content</a>
+
+  <!-- ============ HEADER (same on every page — update aria-current) ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Lorem Ipsum — home">
+        <span data-motif="heart" data-cell="3.4" aria-hidden="true"></span>
+        <span class="logo-name">Lorem Ipsum</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">home</a>
+        <a href="about.html">about me</a>
+        <a href="porchlight.html">porchlight</a>
+        <a href="guides.html" aria-current="page">guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="guides-hero">
+      <div class="wrap guides-hero-grid">
+        <div>
+          <p class="eyebrow reveal">the sewing box</p>
+          <h1 class="reveal">Guides <em>&amp;</em> <span class="script">tutorials</span></h1>
+          <p class="lede reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Video walkthroughs and written how-tos for Porchlight and beyond — sed do eiusmod tempor.</p>
+          <div class="btn-row reveal">
+            <a class="btn" href="#all-guides">browse all</a>
+            <a class="btn btn-pink" href="https://www.youtube.com/"><svg aria-hidden="true"><use href="#t-youtube"/></svg>youtube channel</a>
+          </div>
+        </div>
+        <div class="checker-wrap reveal drop" style="--r:-3deg">
+          <div class="checker-ring" data-speed=".04">
+            <img src="assets/img/photos/g-window.jpg" alt="Placeholder photo: a tidy desk with a laptop by a window" width="800" height="500">
+          </div>
+          <span class="sticker deco" style="left:-6%;bottom:12%;rotate:-8deg" data-speed=".1">lorem for the crafty ✿</span>
+          <svg class="deco tool" style="right:-4%;top:2%" data-speed=".16" data-spin=".05" aria-hidden="true"><use href="#t-scissors"/></svg>
+          <svg class="deco tool" style="right:4%;bottom:-2%;color:var(--olive)" data-speed=".08" aria-hidden="true"><use href="#t-spool"/></svg>
+          <svg class="deco sparkle twinkle" style="left:4%;top:0;color:#d6e66c" viewBox="-52 -52 104 104" data-speed=".22" aria-hidden="true"><use href="#sparkle"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED VIDEO ============ -->
+    <section class="section bg-gingham-green torn-top">
+      <div class="wrap">
+        <div class="featured-video reveal">
+          <!-- Replace YOUR_VIDEO_ID with the id from your YouTube link (the part after watch?v=) -->
+          <button class="yt" type="button" data-yt="YOUR_VIDEO_ID" aria-label="Play video: Porchlight, start to finish">
+            <img src="assets/img/photos/g-imac.jpg" alt="" width="800" height="500">
+            <svg class="play-btn" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#play"/></svg>
+            <span class="yt-note">▶ click to play · 12:34</span>
+          </button>
+          <div>
+            <p class="eyebrow">featured</p>
+            <h2>Porchlight, <em>start to finish</em></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui, cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+            <div class="facts"><span class="tag tag-cherry">video</span><span class="tag tag-green">beginner</span><span class="tag">12 min</span></div>
+            <div class="btn-row" style="margin-top:22px">
+              <a class="btn" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"><svg aria-hidden="true"><use href="#t-youtube"/></svg>watch on youtube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIBRARY ============ -->
+    <section class="section" id="all-guides">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow reveal">the library</p>
+          <h2 class="reveal">every <em>guide</em>, so far</h2>
+          <p class="reveal">Filter by type or level, or search for a lorem ipsum.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter guides">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true"><svg aria-hidden="true"><use href="#t-sparkles"/></svg>all</button>
+          <button class="filter-btn" type="button" data-filter="video" aria-pressed="false"><svg aria-hidden="true"><use href="#t-video"/></svg>videos</button>
+          <button class="filter-btn" type="button" data-filter="written" aria-pressed="false"><svg aria-hidden="true"><use href="#t-page"/></svg>written</button>
+          <button class="filter-btn" type="button" data-filter="beginner" aria-pressed="false"><svg aria-hidden="true"><use href="#t-heart"/></svg>beginner</button>
+          <button class="filter-btn" type="button" data-filter="advanced" aria-pressed="false"><svg aria-hidden="true"><use href="#t-star"/></svg>advanced</button>
+          <label class="search">
+            <span class="visually-hidden">Search guides</span>
+            <svg aria-hidden="true" style="color:var(--cherry)"><use href="#t-search"/></svg>
+            <input id="guide-search" type="search" placeholder="search…" autocomplete="off">
+          </label>
+        </div>
+
+        <!--
+          HOW TO ADD A GUIDE
+          • Video:   copy a <a class="vcard"> block, change the href to your YouTube link, image, title, text.
+          • Written: copy a <a class="wcard"> block and point href at your guide page (see guide.html).
+          • data-tags drives the filter buttons: use any of  video  written  beginner  advanced
+        -->
+        <div class="guide-grid" data-guide-grid>
+
+          <a class="vcard reveal" data-tags="video beginner" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener">
+            <span class="tape"></span>
+            <div class="thumb">
+              <img src="assets/img/photos/g-laptop.jpg" alt="" loading="lazy" width="800" height="500">
+              <svg class="play-btn" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#play"/></svg>
+              <span class="dur">08:12</span>
+            </div>
+            <div class="meta"><span class="tag tag-cherry">video</span><span class="tag tag-green">beginner</span></div>
+            <h3>Lorem ipsum: installing</h3>
+            <p>Dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+            <span class="go">watch on youtube →</span>
+          </a>
+
+          <a class="wcard index-card reveal" style="--d:.08s" data-tags="written beginner" href="guide.html">
+            <svg class="corner" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#cherries"/></svg>
+            <p class="card-title">a gentle start</p>
+            <div class="meta"><span class="tag">written</span><span class="tag tag-green">beginner</span></div>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+            <span class="go">read guide · 10 min →</span>
+          </a>
+
+          <a class="vcard reveal" style="--d:.16s" data-tags="video beginner" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener">
+            <span class="tape green"></span>
+            <div class="thumb">
+              <img src="assets/img/photos/g-flatlay.jpg" alt="" loading="lazy" width="800" height="500">
+              <svg class="play-btn" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#play"/></svg>
+              <span class="dur">05:40</span>
+            </div>
+            <div class="meta"><span class="tag tag-cherry">video</span><span class="tag tag-green">beginner</span></div>
+            <h3>Dolor sit: first steps</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <span class="go">watch on youtube →</span>
+          </a>
+
+          <a class="vcard reveal" data-tags="video advanced" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener">
+            <span class="tape check"></span>
+            <div class="thumb">
+              <img src="assets/img/photos/g-typewriter.jpg" alt="" loading="lazy" width="800" height="500">
+              <svg class="play-btn" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#play"/></svg>
+              <span class="dur">17:05</span>
+            </div>
+            <div class="meta"><span class="tag tag-cherry">video</span><span class="tag tag-beige">advanced</span></div>
+            <h3>Consectetur, in depth</h3>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+            <span class="go">watch on youtube →</span>
+          </a>
+
+          <a class="wcard index-card reveal" style="--d:.08s" data-tags="written advanced" href="guide.html">
+            <svg class="corner" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#daisy"/></svg>
+            <p class="card-title">adipiscing, advanced</p>
+            <div class="meta"><span class="tag">written</span><span class="tag tag-beige">advanced</span></div>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+            <span class="go">read guide · 15 min →</span>
+          </a>
+
+          <a class="vcard reveal" style="--d:.16s" data-tags="video advanced" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener">
+            <span class="tape red"></span>
+            <div class="thumb">
+              <img src="assets/img/photos/g-cafe.jpg" alt="" loading="lazy" width="800" height="500">
+              <svg class="play-btn" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#play"/></svg>
+              <span class="dur">22:48</span>
+            </div>
+            <div class="meta"><span class="tag tag-cherry">video</span><span class="tag tag-beige">advanced</span></div>
+            <h3>Sed do eiusmod tricks</h3>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+            <span class="go">watch on youtube →</span>
+          </a>
+
+          <a class="wcard index-card reveal" data-tags="written beginner" href="guide.html">
+            <svg class="corner" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#bud"/></svg>
+            <p class="card-title">lorem troubleshooting</p>
+            <div class="meta"><span class="tag">written</span><span class="tag tag-green">beginner</span></div>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+            <span class="go">read guide · 6 min →</span>
+          </a>
+
+          <a class="vcard reveal" style="--d:.08s" data-tags="video beginner" href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener">
+            <span class="tape"></span>
+            <div class="thumb">
+              <img src="assets/img/photos/g-desk.jpg" alt="" loading="lazy" width="800" height="500">
+              <svg class="play-btn" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#play"/></svg>
+              <span class="dur">09:30</span>
+            </div>
+            <div class="meta"><span class="tag tag-cherry">video</span><span class="tag tag-green">beginner</span></div>
+            <h3>Tempor incididunt tour</h3>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus.</p>
+            <span class="go">watch on youtube →</span>
+          </a>
+
+          <a class="wcard index-card reveal" style="--d:.16s" data-tags="written advanced" href="guide.html">
+            <svg class="corner" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#rose"/></svg>
+            <p class="card-title">ut labore et dolore</p>
+            <div class="meta"><span class="tag">written</span><span class="tag tag-beige">advanced</span></div>
+            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
+            <span class="go">read guide · 12 min →</span>
+          </a>
+        </div>
+
+        <p class="empty-note" hidden>nothing stitched here yet — try another filter ✿</p>
+      </div>
+    </section>
+
+    <!-- ============ REQUEST A TUTORIAL ============ -->
+    <section class="section bg-dots torn-top">
+      <div class="wrap">
+        <div class="index-card request-card reveal">
+          <span class="tape check"></span>
+          <p class="card-title">can't find what you need?</p>
+          <p>Lorem ipsum dolor sit amet — tell me what you'd like a tutorial on, and I'll add it to the sewing box.</p>
+          <div class="btn-row center" style="margin-top:18px">
+            <a class="btn" href="mailto:hello@example.com"><svg aria-hidden="true"><use href="#t-mail"/></svg>request a guide</a>
+            <a class="btn btn-green" href="https://github.com/"><svg aria-hidden="true"><use href="#t-github"/></svg>open an issue</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (same on every page) ============ -->
+  <footer class="site-footer bg-leaf torn-top">
+    <div class="wrap">
+      <div class="footer-tools" style="color:var(--olive)" aria-hidden="true">
+        <svg><use href="#t-spool"/></svg><svg><use href="#t-scissors"/></svg><svg><use href="#t-needle"/></svg><svg><use href="#t-thimble"/></svg><svg><use href="#t-button"/></svg><svg><use href="#t-pincushion"/></svg><svg><use href="#t-star"/></svg>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-sign">Lorem Ipsum</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis — stitched together by hand.</p>
+        </div>
+        <div>
+          <h4>wander</h4>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about me</a></li>
+            <li><a href="porchlight.html">porchlight</a></li>
+            <li><a href="guides.html">guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>find me</h4>
+          <ul>
+            <li><a href="https://www.youtube.com/">youtube</a></li>
+            <li><a href="https://github.com/">github</a></li>
+            <li><a href="mailto:hello@example.com">email</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-small">© <span data-year>2026</span> lorem ipsum · hand-stitched with html &amp; css ✿</p>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top">
+    <svg viewBox="-50 -50 100 100" style="color:#efa9ba" aria-hidden="true"><use href="#sew-button"/></svg>
+  </button>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

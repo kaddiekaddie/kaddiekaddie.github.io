@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lorem Ipsum — hello</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet — a little hand-stitched corner of the internet: about me, the Porchlight project, and guides.">
+  <meta name="theme-color" content="#b3122e">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pinyon+Script&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-thread>
+  <a class="skip-link" href="#main">skip to content</a>
+
+  <!-- ============ HEADER (same on every page — update aria-current) ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Lorem Ipsum — home">
+        <span data-motif="heart" data-cell="3.4" aria-hidden="true"></span>
+        <span class="logo-name">Lorem Ipsum</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" aria-current="page">home</a>
+        <a href="about.html">about me</a>
+        <a href="porchlight.html">porchlight</a>
+        <a href="guides.html">guides</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <svg class="hero-ribbon" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <path data-ribbon data-base=".83" data-amp=".07" data-freq="1.1" data-dy="9" fill="none" stroke="rgba(61,31,36,.12)" stroke-width="40" stroke-linecap="round"/>
+        <path data-ribbon data-base=".83" data-amp=".07" data-freq="1.1" fill="none" stroke="url(#g-ribbon-h)" stroke-width="36"/>
+        <path data-ribbon data-base=".83" data-amp=".07" data-freq="1.1" data-dy="-12" fill="none" stroke="#fff3f6" stroke-width="2" stroke-dasharray="8 6"/>
+        <path data-ribbon data-base=".83" data-amp=".07" data-freq="1.1" data-dy="12" fill="none" stroke="#d9748f" stroke-width="2" stroke-dasharray="8 6"/>
+      </svg>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">est. MMXXVI · a little corner of the internet</p>
+          <h1 class="visually-hidden">Hello, I'm Lorem</h1>
+          <p class="hero-hello reveal" style="--d:.08s" aria-hidden="true">hello,</p>
+          <div class="aida pink stitched-border hero-name" data-stitch="i'm Lorem" data-rows="30" data-cell="6" aria-hidden="true"></div>
+          <p class="hero-lede reveal" style="--d:.15s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — ut enim ad minim veniam, quis nostrud.</p>
+          <div class="btn-row reveal" style="--d:.22s">
+            <a class="btn" href="about.html">about me</a>
+            <a class="btn btn-pink" href="porchlight.html"><svg aria-hidden="true"><use href="#t-sparkles"/></svg>porchlight</a>
+            <a class="btn btn-green" href="guides.html">guides</a>
+          </div>
+          <span class="hero-note reveal" style="--d:.3s">scroll down, lorem ipsum ✿</span>
+        </div>
+
+        <div class="hero-visual">
+          <div class="oval-frame reveal drop" data-speed=".05">
+            <img src="assets/img/photos/portrait-home.jpg" alt="Placeholder portrait: a woman holding a bunch of wildflowers in a sunny field" width="800" height="1000">
+            <svg viewBox="0 0 400 500" aria-hidden="true"><use href="#oval-frame"/></svg>
+          </div>
+          <svg class="bow deco" viewBox="0 0 200 160" data-speed=".1" aria-hidden="true"><use href="#bow"/></svg>
+          <svg class="cherries deco" viewBox="-50 -50 100 100" data-speed=".16" data-spin=".03" aria-hidden="true"><use href="#cherries"/></svg>
+          <svg class="daisies deco" viewBox="-50 -50 100 100" data-speed="-.06" data-spin="-.05" aria-hidden="true"><use href="#daisy"/></svg>
+          <div class="seal deco" data-speed="-.1" data-spin=".06" aria-hidden="true">
+            <svg viewBox="-54 -54 108 108" style="color:var(--cherry)"><use href="#seal"/></svg>
+            <span>hand<strong>made</strong>with love</span>
+          </div>
+          <svg class="deco sparkle lg twinkle" style="right:-4%;top:2%;color:#f4f2ee" viewBox="-52 -52 104 104" data-speed=".2" aria-hidden="true"><use href="#sparkle"/></svg>
+          <svg class="deco sparkle twinkle" style="left:4%;top:-4%;color:#d6e66c" viewBox="-52 -52 104 104" data-speed=".25" aria-hidden="true"><use href="#sparkle"/></svg>
+          <svg class="deco sparkle sm twinkle" style="right:8%;bottom:-2%;color:#efa9ba" viewBox="-52 -52 104 104" data-speed=".08" aria-hidden="true"><use href="#sparkle"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CROSSING RIBBON MARQUEES (move with scroll direction) ============ -->
+    <div class="ribbons" aria-hidden="true">
+      <div class="marquee b" data-marquee="-1">
+        <div class="marquee-track"><div class="marquee-group">
+          <span class="marquee-item">lorem ipsum <svg><use href="#t-heart"/></svg></span>
+          <span class="marquee-item"><span class="script">dolor sit amet</span> <svg><use href="#t-star"/></svg></span>
+          <span class="marquee-item">consectetur <svg><use href="#t-heart"/></svg></span>
+          <span class="marquee-item"><span class="script">adipiscing elit</span> <svg><use href="#t-star"/></svg></span>
+        </div></div>
+      </div>
+      <div class="marquee a" data-marquee="1">
+        <div class="marquee-track"><div class="marquee-group">
+          <span class="marquee-item">porchlight <svg><use href="#t-sparkles"/></svg></span>
+          <span class="marquee-item"><span class="script">about me</span> <svg><use href="#t-heart"/></svg></span>
+          <span class="marquee-item">guides &amp; tutorials <svg><use href="#t-sparkles"/></svg></span>
+          <span class="marquee-item"><span class="script">sed do eiusmod</span> <svg><use href="#t-heart"/></svg></span>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- ============ WHAT I DO (red gingham) ============ -->
+    <section class="what bg-gingham torn-top torn-bottom">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="what-head-card reveal drop" style="--r:-1.5deg">
+            <p class="eyebrow">what you'll find here</p>
+            <h2>a few <span class="script">little</span> things</h2>
+          </div>
+        </div>
+
+        <div class="what-grid">
+          <a class="what-card reveal" href="about.html">
+            <span class="tape"></span>
+            <svg class="emblem" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#daisy"/></svg>
+            <div class="arch"><img src="assets/img/photos/reading.jpg" alt="" loading="lazy" width="800" height="1000"></div>
+            <h3>About <em>me</em></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <span class="label">read more</span>
+          </a>
+          <a class="what-card reveal" style="--d:.1s" href="porchlight.html">
+            <span class="tape green"></span>
+            <svg class="emblem" viewBox="0 0 100 150" aria-hidden="true"><use href="#lantern"/></svg>
+            <div class="arch"><img src="assets/img/photos/porch-house.jpg" alt="" loading="lazy" width="900" height="1100"></div>
+            <h3>Porch<em>light</em></h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+            <span class="label">see the project</span>
+          </a>
+          <a class="what-card reveal" style="--d:.2s" href="guides.html">
+            <span class="tape check"></span>
+            <svg class="emblem" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#cherries"/></svg>
+            <div class="arch"><img src="assets/img/photos/g-typewriter.jpg" alt="" loading="lazy" width="800" height="500"></div>
+            <h3>Guides <em>&amp;</em> tutorials</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            <span class="label">start learning</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORCHLIGHT TEASER (chartreuse leaf print) ============ -->
+    <section class="section bg-leaf">
+      <div class="wrap">
+        <div class="teaser-board reveal">
+          <span class="tape check corner-l"></span>
+          <span class="tape green corner-r"></span>
+
+          <div class="teaser-photos">
+            <figure class="polaroid" data-speed=".04">
+              <img src="assets/img/photos/porch-house.jpg" alt="Placeholder photo: a yellow house with a bicycle by the front porch" loading="lazy" width="900" height="1100">
+              <figcaption>the porch, lorem ipsum</figcaption>
+            </figure>
+            <figure class="polaroid" data-speed="-.05">
+              <span class="tape"></span>
+              <img src="assets/img/photos/porch-lights.jpg" alt="Placeholder photo: string lights over a cobbled street at dusk" loading="lazy" width="800" height="600">
+              <figcaption>dolor sit amet</figcaption>
+            </figure>
+            <svg class="lantern deco" viewBox="0 0 100 150" data-speed=".12" aria-hidden="true"><use href="#lantern"/></svg>
+          </div>
+
+          <div class="teaser-copy">
+            <p class="eyebrow">the project</p>
+            <h2>Porch<em>light</em> <span class="script">is on</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.</p>
+            <p>Donec ullamcorper nulla non metus auctor fringilla, vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <div class="btn-row">
+              <a class="btn" href="porchlight.html">visit porchlight</a>
+              <a class="btn btn-cream" href="guides.html">setup guide</a>
+            </div>
+            <div class="envelope" aria-hidden="true"><span class="label">v1.0 · lorem ipsum</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LATEST GUIDES (grid paper) ============ -->
+    <section class="section bg-grid torn-top">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow reveal">fresh off the hoop</p>
+          <h2 class="reveal">latest <em>guides</em></h2>
+          <p class="reveal">Aenean lacinia bibendum nulla sed consectetur. Video walkthroughs and written how-tos, lorem ipsum.</p>
+        </div>
+
+        <div class="guides-strip">
+          <a class="polaroid reveal" href="guides.html#video" data-speed=".03">
+            <span class="tape"></span>
+            <div class="play-wrap">
+              <img src="assets/img/photos/g-laptop.jpg" alt="" loading="lazy" width="800" height="500">
+              <svg class="play-btn" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#play"/></svg>
+            </div>
+            <p class="cap">lorem ipsum, part one</p>
+          </a>
+          <a class="polaroid reveal" style="--d:.1s" href="guides.html#written" data-speed="-.03">
+            <span class="tape green"></span>
+            <div class="play-wrap">
+              <img src="assets/img/photos/g-typewriter2.jpg" alt="" loading="lazy" width="800" height="500">
+            </div>
+            <p class="cap">a written how-to ✎</p>
+          </a>
+          <a class="polaroid reveal" style="--d:.2s" href="guides.html#video" data-speed=".05">
+            <span class="tape check"></span>
+            <div class="play-wrap">
+              <img src="assets/img/photos/g-window.jpg" alt="" loading="lazy" width="800" height="500">
+              <svg class="play-btn" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#play"/></svg>
+            </div>
+            <p class="cap">dolor sit amet tips</p>
+          </a>
+        </div>
+
+        <div class="btn-row center mt-lg">
+          <a class="btn" href="guides.html">see all guides <svg aria-hidden="true"><use href="#t-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LITTLE LETTER (pink polka dots) ============ -->
+    <section class="section bg-dots torn-top">
+      <div class="wrap">
+        <div class="letter bg-lined reveal">
+          <div class="stamp" aria-hidden="true"><img src="assets/img/photos/p-blossom.jpg" alt="" loading="lazy" width="600" height="600"></div>
+          <p>Dear visitor,</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <p>Curabitur blandit tempus porttitor — thank you for stopping by. Put the kettle on and stay a while ✿</p>
+          <p class="sign">Lorem</p>
+          <svg class="pressed deco" viewBox="-50 -50 100 100" data-spin=".03" aria-hidden="true"><use href="#sprig"/></svg>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER (same on every page) ============ -->
+  <footer class="site-footer bg-leaf torn-top">
+    <div class="wrap">
+      <div class="footer-tools" style="color:var(--olive)" aria-hidden="true">
+        <svg><use href="#t-spool"/></svg><svg><use href="#t-scissors"/></svg><svg><use href="#t-needle"/></svg><svg><use href="#t-thimble"/></svg><svg><use href="#t-button"/></svg><svg><use href="#t-pincushion"/></svg><svg><use href="#t-star"/></svg>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-sign">Lorem Ipsum</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis — stitched together by hand.</p>
+        </div>
+        <div>
+          <h4>wander</h4>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about me</a></li>
+            <li><a href="porchlight.html">porchlight</a></li>
+            <li><a href="guides.html">guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>find me</h4>
+          <ul>
+            <li><a href="https://www.youtube.com/">youtube</a></li>
+            <li><a href="https://github.com/">github</a></li>
+            <li><a href="mailto:hello@example.com">email</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-small">© <span data-year>2026</span> lorem ipsum · hand-stitched with html &amp; css ✿</p>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top">
+    <svg viewBox="-50 -50 100 100" style="color:#efa9ba" aria-hidden="true"><use href="#sew-button"/></svg>
+  </button>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
