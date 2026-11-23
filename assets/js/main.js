@@ -20,6 +20,7 @@
      (See IMAGE-LIST.md for every name, size and where it appears.)
      ------------------------------------------------------------------------ */
   const ART = {
+    chamomile: "assets/img/art/chamomile.png",
     // "oval-frame": "assets/img/art/oval-frame.png",
     // vinok: "assets/img/art/vinok.png",
     // rose: "assets/img/art/rose.png",
