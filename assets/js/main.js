@@ -27,6 +27,7 @@
     kalyna: "assets/img/art/kalyna.png?v=2",
     sprig: "assets/img/art/sprig.png",
     bow: "assets/img/art/bow.png",
+    "oval-frame": "assets/img/art/oval-frame.png",
     // "oval-frame": "assets/img/art/oval-frame.png",
     // vinok: "assets/img/art/vinok.png",
     // rose: "assets/img/art/rose.png",
