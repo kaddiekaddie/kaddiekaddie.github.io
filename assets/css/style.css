@@ -590,7 +590,18 @@ svg.deco, img.deco { overflow: visible; filter: drop-shadow(0 3px 3px rgba(61, 3
   line-height: 1.2;
 }
 .marquee-item .script { font-size: 1.25em; font-style: normal; }
-.marquee-item svg { width: 1em; height: 1em; flex: none; }
+.ribbon-doodle {
+  width: 1em;
+  height: 1em;
+  flex: none;
+  background-color: currentColor;
+  mask: var(--ribbon-art) center / contain no-repeat;
+}
+.marquee.b .ribbon-doodle { color: var(--olive); }
+.ribbon-doodle-star { --ribbon-art: url("../img/art/footer/star.png"); }
+.ribbon-doodle-cherries { --ribbon-art: url("../img/art/footer/cherries.png"); }
+.ribbon-doodle-poppy { --ribbon-art: url("../img/art/footer/poppy.png"); }
+.ribbon-doodle-heart { --ribbon-art: url("../img/art/ribbon-heart.png"); }
 .marquee.a { background: var(--cherry); color: var(--white); rotate: -3deg; translate: 0 -95%; }
 .marquee.b { background: var(--chartreuse); color: var(--ink); rotate: 2.5deg; translate: 0 5%; }
 .marquee.b::before, .marquee.b::after { background-image: radial-gradient(circle at 3px 3px, var(--cherry) 2.2px, transparent 2.7px); }
