@@ -20,7 +20,9 @@
      (See IMAGE-LIST.md for every name, size and where it appears.)
      ------------------------------------------------------------------------ */
   const ART = {
+    rose: "assets/img/art/rose.png",
     chamomile: "assets/img/art/chamomile.png",
+    poppy: "assets/img/art/poppy.png",
     // "oval-frame": "assets/img/art/oval-frame.png",
     // vinok: "assets/img/art/vinok.png",
     // rose: "assets/img/art/rose.png",
@@ -724,9 +726,16 @@
   renderBloom();
 
   // align <use> to its svg's viewBox, and swap in PNG overrides from ART
-  document.querySelectorAll("svg > use").forEach((u) => {
+  document.querySelectorAll("svg > use, .tray-paint > use").forEach((u) => {
     const svg = u.ownerSVGElement;
     const name = (u.getAttribute("href") || "").replace("#", "");
+    if (ART[name] && u.parentElement !== svg) {
+      const image = document.createElementNS(svg.namespaceURI, "image");
+      for (const attribute of u.attributes) image.setAttribute(attribute.name, attribute.value);
+      image.setAttribute("href", ART[name]);
+      u.replaceWith(image);
+      return;
+    }
     if (ART[name] && svg.children.length === 1 && svg.parentNode) {
       const img = document.createElement("img");
       img.src = ART[name];
