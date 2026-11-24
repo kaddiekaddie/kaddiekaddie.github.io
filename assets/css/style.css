@@ -59,7 +59,7 @@
   --pat-rushnyk: url("../img/patterns/rushnyk.svg");
   /* inlined so it also works as a CSS mask when the page is opened from disk */
   --pat-diamond: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10' viewBox='0 0 12 10'%3E%3Cpath d='M5 1 L9 5 L5 9 L1 5Z'/%3E%3Ccircle cx='11' cy='5' r='1'/%3E%3C/svg%3E");
-  --pat-leafy: url("../img/patterns/leafy.svg");
+  --pat-leafy: url("../img/patterns/leafy-rococo.svg");
   --pat-floral: url("../img/patterns/floral.svg");
 
   --py: 0px;
