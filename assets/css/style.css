@@ -682,6 +682,21 @@ svg.deco, img.deco { overflow: visible; filter: drop-shadow(0 3px 3px rgba(61, 3
 .what-card .emblem { position: absolute; width: 70px; height: 70px; right: -16px; top: -18px; rotate: 12deg; }
 .what-card img.emblem { width: 58px; height: auto; background: var(--white); border-radius: 50%; padding: 10px; box-shadow: var(--shadow-paper); }
 
+/* porchlight artwork on the home page */
+.porchlight-art {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 5;
+  background: #f6ecdf url("../porchlight/patterns/harlequin.svg") center / 180px repeat;
+}
+.porchlight-art > img {
+  width: 84%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  filter: none;
+}
+
 /* porchlight teaser board */
 .teaser-board {
   position: relative;
@@ -696,7 +711,9 @@ svg.deco, img.deco { overflow: visible; filter: drop-shadow(0 3px 3px rgba(61, 3
 .teaser-photos { position: relative; min-height: 460px; }
 .teaser-photos .polaroid:nth-child(1) { --r: -5deg; width: 68%; position: absolute; left: 0; top: 0; }
 .teaser-photos .polaroid:nth-child(2) { --r: 6deg; width: 52%; position: absolute; right: 0; bottom: 0; }
-.teaser-photos .polaroid:nth-child(1) img { aspect-ratio: 4 / 5; }
+.teaser-photos .porchlight-art { align-items: start; }
+.teaser-photos .porchlight-art > img { width: 78%; margin-block-start: 14%; }
+.teaser-photos .porchlight-art + figcaption { text-align: left; }
 .teaser-copy .pl-lockup { width: min(320px, 90%); margin: 0 0 18px -6px; }
 .teaser-copy .envelope { width: min(240px, 70%); margin: 26px 0 0 auto; rotate: 3deg; }
 .teaser-copy .envelope img { position: absolute; left: 50%; top: 58%; width: 64px; translate: -50% -50%; z-index: 2; background: var(--white); border-radius: 50%; padding: 10px; box-shadow: var(--shadow-paper); }
